@@ -32,7 +32,7 @@ main{
     padding: 2% 0;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     border-radius: 0 0 1vw 1vw;
@@ -40,9 +40,12 @@ main{
     position: relative;
 }
 
+.logo-vnw{
+    width: 25%;
+}
 
 .vnw{
-    
+    width: 100%;
     animation: 2s forwards slide ;
     animation-delay: 1s;
     opacity: 0%;
@@ -57,16 +60,16 @@ main{
 
 
 .nav{
-    width: 5%;
-    height: 2%;
-    padding-top: 5%;
+
+    width: 4%;
+    margin-top: 1.5%;
 }
 
 .rod{
 
-    width: 20%;
+    width: 30%;
     height: 0.4vh;
-    margin-top: 2%;
+    margin-top: 1%;
     background-color: #FFAD30;
 }
 
@@ -96,6 +99,8 @@ main{
 .vai-text{
 
     font-size: 1.5vw;
+    padding: 3% 0% 1% 0;
+    text-align: center;
     font-weight: bolder;
     color: black;
     
@@ -105,7 +110,6 @@ main{
 
     width:100%;
     
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,6 +132,8 @@ main{
 .responsive:hover{
     transform: scale(1.05);
 }
+
+
 
 .interactivity{
     width: 22%;
@@ -181,15 +187,19 @@ main{
     color: white;
 }
 
-p{
+.text-vnw{
     font-size: 1.3vw;
     padding: 8% 0 4% 0;
+    text-align: center;
     color:white;
 
 }
 
 .js{
-    font-size: 1.1vw;
+    padding: 8% 0 4% 0;
+    font-size: 1.3vw;
+    text-align: center;
+    color:white;
 }
 
 .language-box{
@@ -221,17 +231,23 @@ p{
 .project-container{
 
     width: 100%;
+    height: 100%;
+    text-decoration: none;
     display: flex;
     justify-content: space-around;
 
 }
 
+.btn-project{
+    width: 45%;
+    height: 100%;
+}
+
 .project{
 
-    width: 45%;
-    padding: 2.5% 0;
+    width: 100%;
+    padding: 4.5% 0;
 
-    
     border: none;
     font-size: 1.1vw;
 
@@ -253,7 +269,7 @@ p{
     top: 0;
     left: 0;
     background-color:#FFAD30 ;
-    transition: all .5s ease;
+    transition: all .8s ease;
     z-index: -1;
     
 }
@@ -263,4 +279,76 @@ p{
     width: 100%;
     color: black;
 
+}
+
+
+@media(max-width:500px){
+
+    main{
+        height: 100%;
+    }
+
+    .vnw-box{
+        width: 95%;
+    }
+
+    .nav{
+        width: 10%;
+    }
+
+    .vai-text{
+        width:60%;
+        padding: 8% 0 5% 0;
+        font-size: 4vw;
+        text-align: center;
+
+    }
+
+    .vnw-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .responsive{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    .interactivity{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    .js{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .architecture{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    .titles{
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .text-vnw{
+        width: 95%;
+        font-size: 4vw;
+        padding: 2%;
+        text-align: center;
+    }
+
+    .language{
+        font-size: 3.5vw;
+        border-radius:3vw ;
+    }
+
+    .project{
+        font-size: 3vw;
+        margin-bottom:2% ;
+    }
 }

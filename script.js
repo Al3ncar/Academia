@@ -31,9 +31,9 @@ if(month === "Janeiro" || month === "Dezembro"){
 
 // ------------04------------//
 
-let name = "Igor"
+let nameProfile = "Igor"
 
-if(name[0] == "R"|| name[0] == "r"){
+if(nameProfile . substring(0,1) === 'R'|| nameProfile . substring(0,1) === 'r'){
     console.log("Seu nome começa com R")
 }else{
     console.log("Seu nome não começa com R")
@@ -44,7 +44,7 @@ if(name[0] == "R"|| name[0] == "r"){
 let lestName = "Bastos"
 lestName.length
 
-if(lestName[0] == "E"|| lestName.length === 6){
+if(lestName.substring(0,1) == "E"|| lestName.length === 6){
     console.log("Seu sobrenome tem todas as caracteristicas requisitadas")
 }else{
     console.log("Seu sobrenome não tem todas as caracteristicas requisitadas")
